@@ -34,7 +34,7 @@ import Discord.DiscordClient;
 // Yeah seems like a reasonable goal to me
 class MMOptions extends MusicBeatSubstate
 {
-	var options:Array<String> = ['Notes', 'Controls', 'Preferences', 'Mario Options', 'Delete Data'];
+	var options:Array<String> = ['Notes', 'Controls', 'Preferences', 'Luigi', 'Delete Data'];
 	private var grpOptions:FlxTypedGroup<FlxText>;
 
 	private static var curSelected:Int = 0;

@@ -34,7 +34,7 @@ import Discord.DiscordClient;
 // Yeah seems like a reasonable goal to me
 class MMOptions extends MusicBeatSubstate
 {
-	var options:Array<String> = ['Notes', 'Controls', 'Preferences', 'Luigi', 'Delete Data'];
+	var options:Array<String> = ['Notes', 'Controls', 'Preferences', 'Mario Time Options', 'Delete Data'];
 	private var grpOptions:FlxTypedGroup<FlxText>;
 
 	private static var curSelected:Int = 0;
@@ -51,7 +51,7 @@ class MMOptions extends MusicBeatSubstate
 	override function create()
 	{
 		#if desktop
-		DiscordClient.changePresence("Options Menu", null);
+		DiscordClient.changePresence("Mario Time Options Menu", null);
 		#end
 
 		FlxG.sound.playMusic(Paths.music('options'), 1);
